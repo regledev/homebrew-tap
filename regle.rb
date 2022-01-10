@@ -5,16 +5,16 @@ class Regle < Formula
 
   if OS.mac? and Hardware::CPU.arm?
     url "https://github.com/regledev/homebrew-tap/releases/download/v#{version}/regle_cli_#{version}_aarch64-apple-darwin.tar.gz"
-    sha256 "293bcc6b1b07c88f14374e99dda7253a36575e82c414a2f86693f0c7aefa28de"
+    sha256 "1f91979956d2b8651038ba66163fc155cb8d290ac6c24b1ee1c35a933d7d4191"
   elsif OS.mac?
     url "https://github.com/regledev/homebrew-tap/releases/download/v#{version}/regle_cli_#{version}_x86_64-apple-darwin.tar.gz"
-    sha256 "d749b94fabd3cd6461f23e2db63aaa8e3465c501c3d8812f7a0e9bebc0e010bb"
+    sha256 "50dca616152fd64b6fbfb2cde63867d825b884eff17f6371a395d24f5210edb0"
   elsif OS.linux? and Hardware::CPU.arm?
     url "https://github.com/regledev/homebrew-tap/releases/download/v#{version}/regle_cli_#{version}_aarch64-unknown-linux-gnu.tar.gz"
-    sha256 "39e4a6e836a9a63ae60147922197e7661f1e9c860085f4360820eb35ff77cd0f"
+    sha256 "d7010119df2a65362227f421f415aa91360468b2d30f02471f60afc50f97e4de"
   elsif OS.linux?
     url "https://github.com/regledev/homebrew-tap/releases/download/v#{version}/regle_cli_#{version}_x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "4b151e1115474ae9d1013698041a94cb17cd707847efd52f29050ebaf2702ceb"
+    sha256 "efa4df8c9d1c04039e017315d54042fab86e92631e26b1b892721a2c46124fe5"
   end
   def install
     bin.install "regle"
